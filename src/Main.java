@@ -30,16 +30,38 @@ public class Main {
 //        1-dən n-dək ədədlər verilib.n-i inputdan alın. O ədədlər içərisində switch-case ilə yoxlayın.
 //        1-5 arasında olanları tapdıqda , çapa "1-5 arasındadır",5-10 arasında olanları tapdıqda ,
 //                çapa "5-10 arasındadır" yazsın. Default-da da ədəd 10-dan böyükdür çıxsın.
+//
+//
+//        Scanner task = new Scanner(System.in);
+//        System.out.print("eded daxil edin: ");
+//        int eded = task.nextInt();
+//
+//        switch (eded){
+//            case 1,2,3,4,5 -> System.out.println("eded 1-5 arasindadir");
+//            case 6,7,8,9,10 -> System.out.println("eded 5-10 arasindadir");
+//            default -> System.out.println("eded 10-dan boyukdur");
+//        }
 
 
-        Scanner task = new Scanner(System.in);
-        System.out.print("eded daxil edin: ");
-        int eded = task.nextInt();
 
-        switch (eded){
-            case 1,2,3,4,5 -> System.out.println("eded 1-5 arasindadir");
-            case 6,7,8,9,10 -> System.out.println("eded 5-10 arasindadir");
-            default -> System.out.println("eded 10-dan boyukdur");
+
+
+
+
+
+//        Bir array yaradın. Bütün saitləri saxlayın.
+//                Array-də olan bütün sait-ləri switch-case ilə açıq və qapalı olduğunu çapa verin.
+
+
+
+        String [] array = {"a","ı","o","u","e","ə","i","ö","ü"};
+
+        for (int i=0; i<array.length; i++){
+            switch (array[i]){
+                case "ı","i","u","ü" -> System.out.println(array[i] +" qapali sait");
+                case "a","e","ə","o","ö" -> System.out.println(array[i] + " aciq sait");
+            }
+
         }
     }
 }
